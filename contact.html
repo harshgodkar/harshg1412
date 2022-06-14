@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <style>
+    * {
+      margin: 0px 10px 5px 10px;
+    }
+
+    input[type=text],
+    [type=email],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 5px 5px 5px 0px;
+      display: inline-block;
+    }
+
+    input[type=submit] {
+      background-color: #0d6efd;
+      color: #fff;
+      padding: 10px 19px;
+      margin-left: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: left;
+      width: 200px;
+    }
+
+    input[type=submit]:hover {
+      background-color: darkblue;
+    }
+    input[type=text]:hover, [type=email]:hover, select:hover, textarea:hover{
+      box-shadow: #0d6efd;
+      
+    }
+    /* .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    } */
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media (max-width:1200px) {
+
+      .header {
+        padding: 1.5rem 5%;
+      }
+
+      section {
+        padding: 3rem 5%;
+      }
+
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .col-25,
+      .col-75,
+      input[type=submit] {
+        width: 75%;
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width:991px) {
+
+      html {
+        font-size: 55%;
+      }
+
+      section {
+        padding: 3rem 2rem;
+      }
+
+      .header {
+        padding: 1.5rem 2rem;
+      }
+
+    }
+
+    @media (max-width:600px) {
+
+      .heading {
+        font-size: 11vw;
+      }
+
+      .navbar {
+        width: 100%;
+        z-index: 1200;
+        background: none;
+      }
+
+      .navbar a {
+        background: var(--yellow);
+        font-size: 4rem;
+        transform: scale(.9);
+        color: var(--black);
+        border: var(--border);
+        padding: .5rem 2rem;
+      }
+
+      .navbar-img {
+        width: 100%;
+      }
+
+      .home h3 {
+        font-size: 10vw;
+      }
+
+      .home .home-img {
+        height: 20rem;
+        width: 20rem;
+        transform: translate(-50%, -100%) scale(0);
+      }
+
+      .home .home-text:hover~.home-img {
+        transform: translate(-50%, -100%) scale(1);
+      }
+
+      .about .info-container .image {
+        order: -1;
+      }
+    }
+
+    @media (max-width:450px) {
+
+      html {
+        font-size: 50%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <img src="mypic1.jpg" class="logo">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="contact.html" class="active">CONTACT ME</a></li>
+      </ul>
+      <div class="social-link">
+        <a href="https://www.linkedin.com/in/harsh-godkar-9b342423a/"><img src="linkedin.png"></a>
+        <a href="https://twitter.com/GodkarHarsh"><img src="twitter.png"></a>
+        <a href="https://www.instagram.com/godkarh123/"><img src="Instagram.svg"></a>
+      </div>
+    </nav>
+  </div>
+
+  <div>
+    <form action="mailto: harshgodkar14@gmail.com" method="post" enctype="text/plain">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Your Name:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="EmailAddress">Your Email Address:</label>
+        </div>
+        <div class="col-75">
+          <input id="EmailAddress" type="email" maxLength="64" name="EmailAddress" placeholder="abc@example.com"
+            required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="City">City:</label>
+        </div>
+        <div class="col-75">
+          <select id="City" name="City">
+            <option placeholder="Select your city">Select your City</option>
+            <option value="Surat">Surat</option>
+            <option value="Junagadh">Junagadh</option>
+            <option value="Valsad">Valsad</option>
+            <option value="Nadiad">Nadiad</option>
+            <option value="Vadodra">Vadodra</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Navsaari">Navsaari</option>
+            <option value="Baruch">Baruch</option>
+            <option value="Bhavnagar">Bhavnagar</option>
+            <option value="Amreli">Amreli</option>
+            <option value="Udwada">Udwada</option>
+            <option value="Kutch">Kutch</option>
+            <option value="Other..">Other..</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Subject..." style="height:200px"
+            required></textarea>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-25">
+          <label for="Comment">Comment:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="Comment" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
